@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+.container  {
+    max-width: 1440px;
+}
+
+
+/* 
+
+COMMIT
+
+*/
+
+
+section.commit {
+    margin-top: 50px;
+}
+
+.commit-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-bottom: 1px solid #bcbcbc;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.commit-title::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 350px;
+    height: 5px;
+    background-color: #2696f8;
+    border-radius: 4px;
+    bottom: -6%;
+    left: 38%;
+}
+
+.commit-title h2 {
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: bold;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";;
+}
+
+.gallery-left {
+    border-bottom: 1px solid #707070;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.gallery-left::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 5px;
+    background-color: #2696f8;
+    z-index: 1;
+    border-radius: 29px;
+    bottom: -3px;
+}
+
+.gallery-left_disc__pz {
+    display: flex;
+}
+
+.gallery-left_disc__pz ul {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 25px; 
+}
+
+.history-end_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+#first2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#first {
+    align-items: center;
+}
+
+#second {
+    align-items: center;
+}
+
+.gallery-left_date h1 {
+    color: #2696f8;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.gallery-left_disc {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gallery-left_disc p {
+    font-weight: 600;
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.gallery-left_disc span {
+    padding-left: 25px;
+}
+
+.gallery-left_btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+.gallery-left_btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 32px;
+    color: #fff;
+    background-color: #3eb4c2;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.gallery-left_btn a:hover {
+    background-color: #fff;
+    color: #3eb4c2;
+    border: 1px solid #3eb4c2;
+}
+
+.gallery-right {
+    height: 300px;
+    width: 500px;
+}
+
+.gallery-right img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #2289e1;
+    border-radius: 19px;
+}
+
+.history-gallery .col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+#second {
+    margin: 50px -15px;
+}
+
+.gallery-right2 {
+    border-bottom: 1px solid #707070;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.gallery-right2::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 5px;
+    z-index: 1;
+    background-color: #2696f8;
+    left: 0;
+    bottom: -3px;
+    border-radius: 19px;
+}
+
+.gallery-left2 {
+    height: 300px;
+    width: 500px;
+}
+
+.gallery-left2 img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #2289e1;
+    border-radius: 19px;
+}
+
+.gallery-right2_disc p {
+    font-weight: 600;
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.gallery-right2_disc span{
+    padding-left: 25px;
+}
+
+#second #second1 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.gallery-right2_date {
+    text-align: right;
+    margin-right: 70px;
+}
+
+.gallery-right2_date h1 {
+    color: #2696f8;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+
+/* 
+
+MEDIA
+
+*/
+
+
+@media(max-width :1280px) {
+    .commit-title::after {
+        width: 305px;
+        left: 38%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .commit-title::after {
+        width: 300px;
+        left: 35%;
+    }
+}
+
+@media(max-width: 991px) {
+    .commit-title::after {
+        width: 295px;
+    }
+}
+
+@media(max-width: 767px) {
+    .commit-title h2 {
+        font-size: 30px;
+    }
+    .commit-title::after {
+        left: 28%;
+        width: 320px;
+    }
+    #second #second1 {
+        justify-content: center;
+    }
+    .gallery-right2_date {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        margin: 10px 0;
+    }
+    .gallery-left_btn {
+        margin: 15px 0;
+    }
+    .gallery-left_date {
+        display: flex;
+        justify-content: center;
+    }
+    #first2 {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 578px) {
+
+    .commit-title h2 {
+        font-size: 28px;
+    }
+    .commit-title::after {
+        left: 27%;
+        width: 250px;
+    }
+    .gallery-right2_date h1 {
+        font-size: 24px;
+    }
+    .gallery-left_date h1 {
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 448px) {
+
+    .commit-title h2 {
+        font-size: 22px;
+    }
+
+    .commit-title::after {
+        left: 24%;
+        width: 225px;
+        bottom: -9%;
+    }
+    .gallery-right2_date h1 {
+        font-size: 20px;
+    }
+    .gallery-left_date h1 {
+        font-size: 20px;
+    }
+    .gallery-right2_disc p {
+        font-size: 16px;
+    }
+    .gallery-left_disc p {
+        font-size: 16px;
+    }
+    #second {
+        margin: 30px -15px;
+    }
+    .gallery-left_date {
+        text-align: center; 
+    }
+    .gallery-right2_date {
+        text-align: center;
+    }
+    .gallery-right2::after {
+        width: 200px;
+    }
+    .gallery-left::after {
+        width: 200px;
+    }
+    .history-end_btn img {
+        width: 100%;
+    }
+}
+
+@media(max-width: 414px) {
+
+    .commit-title::after {
+        left: 21%;
+        width: 220px;
+        bottom: -9%;
+    }
+
+    .gallery-right2_date h1 {
+        font-size: 22px;
+    }
+
+    .gallery-left_date h1 {
+        font-size: 22px;
+    }
+
+    .gallery-right2_disc p {
+        font-size: 16px;
+    }
+
+    .gallery-left_disc p {
+        font-size: 16px;
+    }
+    .gallery-left_btn {
+        padding: 0;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 360px) {
+    .commit-title h2 {
+        font-size: 24px;
+    }
+    .commit-title::after {
+        left: 23%;
+        width: 180px;
+        bottom: -9%;
+    }
+    .gallery-left::after {
+        width: 170px;
+    }
+    .gallery-right2::after {
+        width: 170px;
+    }
+    .gallery-left_btn {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+}
+
+@media(max-width: 320px) {
+
+    .commit-title h2 {
+        font-size: 24px;
+    }
+
+    .commit-title::after {
+        left: 27%;
+        width: 130px;
+    }
+}

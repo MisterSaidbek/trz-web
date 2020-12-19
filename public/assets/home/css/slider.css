@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1440px;
+}
+
+/*
+
+LMZ
+
+*/
+
+
+section.links {
+    margin: 50px 0;
+}
+
+.title-name h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+hr {
+    height: 1px;
+    background-color: silver;
+    margin: 0;
+    border: 0;
+}
+
+hr.dark {
+    height: 3px;
+    background-color: #2696F8;
+    width: 250px;
+    margin-top: -2px;
+    border: 0
+}
+
+#links {
+    margin-top: 50px;
+}
+
+#partners {
+    margin-top: 50px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-links1{
+    background-color: white;
+    padding: 30px;
+    border: 2px solid silver;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: none !important;
+    min-height: 211px;
+    width: 100%;
+    display: inline-block;
+}
+
+.owl-item.active {
+    margin-right: 0;
+}
+
+.item-links1 img{
+    height: 70px;
+    display: block;
+    width: auto !important;
+    max-width: 80%;
+    object-fit: contain;
+}
+
+.item-links1 a {
+    text-align: center;
+    text-decoration: none;
+    color: #222;
+    display: block;
+    margin-top: 18px;
+    outline: none !important;
+}
+.links .owl-dots button.owl-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    background: transparent;
+    border: 1px solid #000;
+    margin: 0 3px;
+}
+
+.links .owl-nav {
+    position: absolute;
+    top: -112px;
+    right: 33px;
+}
+
+.links .owl-dots {
+    display: flex;
+    justify-content: center;
+}
+
+.links .owl-prev {
+    outline: none;
+}
+
+.links .owl-next {
+outline: none;
+}
+
+.links .owl-prev span {
+ font-size: 40px;
+ margin: 5px;
+ outline: none;
+ color: grey;
+}
+
+.links .owl-next span {
+    font-size: 40px;
+    margin: 5px;
+    outline: none;
+    color: grey;
+}
+.links .owl-dots {
+    display: none;
+}
+
+@media(max-width: 576px) {
+    .title-name h2 {
+        font-size: 28px;
+    }
+}
+
+@media(max-width: 468px) {
+    .title-name h2 {
+        font-size: 24px;
+    }
+    hr.dark {
+        width: 180px;
+    }
+    .links .owl-nav {
+        right: 0;
+    }
+}
+
+@media(max-width: 414px) {
+    .title-name h2 {
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 360px) {
+    .title-name h2 {
+        font-size: 21px;
+    }
+    hr.dark {
+        width: 150px;
+    }
+}
+
+@media(max-width: 320px) {
+    .title-name h2 {
+        font-size: 20px;
+    }
+}

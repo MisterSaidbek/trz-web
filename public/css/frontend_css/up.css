@@ -1,0 +1,24 @@
+.to-up {
+    position: fixed;
+
+    bottom: 28px;
+
+    right: 48px;
+
+    display: none;
+
+    z-index: 22;
+
+    cursor: pointer;
+    background-color: #2696f8;
+    width: 40px;
+    color: white;
+
+    height: 40px;
+    text-align: center;
+
+
+
+
+    -webkit-font-smoothing: antialiased;
+}

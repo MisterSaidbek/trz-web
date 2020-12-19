@@ -1,0 +1,17 @@
+DirectoryIndex index.php
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^public
+RewriteRule ^(.*)$ public/$1 [L]
+
+AddDefaultCharset utf-8
+
+RewriteCond %{HTTP_REFERER} !^http://trz-web.uz/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://trz-web.uz$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.trz-web.uz/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.trz-web.uz$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://trz-web.uz/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://trz-web.uz$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.trz-web.uz/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.trz-web.uz$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+

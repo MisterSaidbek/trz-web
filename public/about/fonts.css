@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'fonts/Segoe UI Italic';
+    src: url('fonts/SegoeUI-Italic.eot');
+    src: url('fonts/SegoeUI-Italic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/SegoeUI-Italic.woff') format('woff'),
+    url('fonts/SegoeUI-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }

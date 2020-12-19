@@ -1,0 +1,508 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+body {
+
+    font-family: "Segoe UI Italic";
+
+}
+
+
+
+.container {
+
+    /* max-width: 1440px; */
+
+}
+
+
+
+.message {
+
+    margin: 50px 0;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+
+.message-main {
+
+    border: 3px solid #17a6b7;
+
+    width: 60%;
+
+    padding: 0 30px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    border-radius: 30px;
+
+}
+
+
+
+
+
+
+
+.message-main_title {
+
+    padding: 30px 0;
+
+}
+
+
+
+.message-main_title h3 {
+
+    font-weight: 600;
+
+    position: relative;
+
+}
+
+
+
+.message-main_title h3::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 200px;
+
+    height: 3px;
+
+    z-index: 1;
+
+    background-color: #17a6b7;
+
+    bottom: -15px;
+
+    left: 20%;
+
+}
+
+
+
+.message-main_title {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+
+#small {
+
+    border: 3px solid #17a6b7;
+
+    height: 40px;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    text-align: left;
+
+    align-items: center;
+
+    border-radius: 20px;
+
+    outline: none;
+
+    background-color: #fff;
+
+    padding: 0 15px;
+
+    font-weight: 500;
+
+    color: #000000;
+
+    margin: 15px 0;
+
+    box-shadow: 3px 3px 3px 3px rgba(131, 131, 131, 1);
+
+    cursor: pointer;
+
+}
+
+
+
+
+
+#big {
+
+    border: 3px solid #17a6b7;
+
+    height: 200px;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    text-align: left;
+
+    align-items: center;
+
+    border-radius: 20px;
+
+    outline: none;
+
+    background-color: #fff;
+
+    padding: 0 15px;
+
+    font-weight: 500;
+
+    color: #000000;
+
+    box-shadow: 3px 3px 3px 3px rgba(131, 131, 131, 1);
+
+    cursor: pointer;
+
+}
+
+
+
+/* input::-webkit-input-placeholder { color: #000; } */
+
+
+
+.message-main_left__btn {
+
+    margin: 20px 0;
+
+}
+
+
+
+.message-main_left__btn a {
+
+    background-color: #17a6b7;
+
+    color: #fff;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    padding: 5px 45px;
+
+    border-radius: 20px;
+
+    font-weight: 600;
+
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+}
+
+
+
+.message-main_left__btn a:hover {
+
+    color: #17a6b7;
+
+    background-color: #fff;
+
+    border: 2px solid #17a6b7;
+
+}
+
+
+
+.message-right_img {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+
+.message-right_img img {
+
+    width: 215px;
+
+    height: 216px;
+
+}
+
+
+
+.message-right_name {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+
+.message-right_name span {
+
+    text-align: center;
+
+    font-size: 32px;
+
+    text-transform: uppercase;
+
+    color: #b98d2c;
+
+    font-weight: 600;
+
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+}
+
+
+
+.message-right_end {
+
+    margin-top: 30px;
+
+}
+
+
+
+.message-right_end span {
+
+    color: #595959;
+
+    font-size: 18px;
+
+}
+
+
+
+.end-img {
+
+    margin: 35px 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    object-position: center;
+
+    object-fit: cover;   
+
+}
+
+
+
+@media(max-width: 1480px) {
+
+    .message-right_name span {
+
+        font-size: 30px;
+
+    }
+
+}
+
+
+
+@media(max-width: 1280px) {
+
+    .message-right_name span {
+
+        font-size: 24px;
+
+    }
+
+}
+
+
+
+@media(max-width: 991px) {
+
+    .message-right_name span {
+
+        font-size: 19px;
+
+    }
+
+    .message-right_end span {
+
+        font-size: 17px;
+
+    }
+
+}
+
+
+
+@media(max-width: 768px) {
+
+    .message-main {
+
+        padding: 0;
+
+    }
+
+    .message-right_name span {
+
+        font-size: 15px;
+
+    }
+
+
+
+    .end-img img {
+
+        width: 100%;
+
+    }
+
+}
+
+
+
+@media(max-width: 767px) {
+
+    .message-right_name span {
+
+        font-size: 20px;
+
+    }
+
+    .message-main_left__btn {
+
+        padding: 0  ;
+
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+    .message-right_name span {
+
+        font-size: 18px;
+
+    }
+
+    .message-main_title h3 {
+
+        font-size: 18px;
+
+    }
+
+    .message-main_title h3::after {
+
+        left: 17%;
+
+        width: 130px;
+
+    }
+
+}
+
+
+
+@media (max-width: 441px) {
+
+    .message-right_name span {
+
+        font-size: 15px;
+
+    }
+
+}
+
+
+
+@media(max-width: 360px) {
+
+    .message-main_left__btn {
+
+        margin-top: 30px;
+
+    }
+
+    .message-right_name span {
+
+        font-size: 13px;
+
+    }
+
+    .message-main_title h3::after {
+
+        left: 22%;
+
+        width: 100px;
+
+    }
+
+    .message-main_title {
+
+        margin: 20px 0 5px 0;
+
+        padding: 0;
+
+    }
+
+    .message-main_left__btn a {
+
+        padding: 5px 25px;
+
+    }
+
+}
+
+
+
+@media(max-width: 320px) {
+
+    .message-main_title h3::after {
+
+        left: 17%;
+
+        bottom: -10%;
+
+    }
+
+}
+
+
+

@@ -1,0 +1,592 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+.container {
+
+    max-width: 1440px;
+
+}
+
+
+
+/* 
+
+
+
+LMZ
+
+
+
+*/
+
+
+
+
+
+section.amz {
+
+    margin-top: 50px;
+
+}
+
+
+
+.amz-title {
+
+    display: flex;
+
+    align-items: center;
+
+    text-align: center;
+
+    justify-content: center;
+
+    border-bottom: 1px solid #bcbcbc;
+
+    position: relative;
+
+}
+
+
+
+.amz-title::after {
+
+    content: "";
+
+    position: absolute;
+
+    z-index: 1;
+
+    width: 350px;
+
+    height: 5px;
+
+    background-color: #2696f8;
+
+    border-radius: 4px;
+
+    bottom: -6%;
+
+    left: 38%;
+
+}
+
+
+
+.amz-title h2 {
+
+    text-transform: uppercase;
+
+    font-size: 34px;
+
+    font-weight: bold;
+
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";;
+
+}
+
+
+
+.amz-name {
+
+    padding: 30px 0;
+
+}
+
+
+
+.amz-name h3 {
+
+    text-transform: uppercase;
+
+    color: #0385f7;
+
+    font-size: 24px;
+
+}
+
+
+
+.item-img {
+
+    border: 3px solid #008aff;
+
+    border-radius: 15px;
+
+}
+
+
+
+.amz-btn {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin: 20px 0;
+
+}
+
+
+
+.amz-btn a {
+
+    color: #fff;
+
+    background-color: #17a6b7;
+
+    border-radius: 20px;
+
+    padding: 3px 40px;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+
+.amz-btn a:hover {
+
+    background-color: #fff;
+
+    color: #17a6b7;
+
+    border: 1px solid #17a6b7;
+
+}
+
+
+
+.amz-text_name {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 50px;
+
+}
+
+
+
+.amz-text_name h3 {
+
+    text-transform: uppercase;
+
+    font-family: "Segoe UI Italic";
+
+    font-weight: bold;
+
+    color: #2696f8;
+
+}
+
+
+
+.amz-img {
+
+    display: flex;
+
+    justify-content: center;
+
+    padding: 20px 0;
+
+}
+
+
+
+.amz-text_disc span {
+
+    font-weight: 600;
+
+    font-size: 18px;
+
+}
+
+.manual {
+    margin-top: 50px;
+}
+
+.manual-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-bottom: 1px solid #898989;
+    position: relative;
+}
+
+.manual-title::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 350px;
+    height: 5px;
+    background-color: #2696f8;
+    border-radius: 4px;
+    bottom: -6%;
+    left: 38%;  
+}
+
+
+.manual-title h2 {
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: bold;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.manual-cards {
+    margin-top: 20px;
+}
+
+.idcard {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.idcard-name {
+    width: max-content;
+}
+
+.idcard-name h3 {
+    /* color: #0079f6; */
+    font-size: 26px;
+    width: max-content;
+}
+
+.idcard-job {
+    position: relative;
+    width: max-content;
+}
+
+.idcard-job span {
+    color: #0079f6;
+    font-size: 20px;
+} 
+
+.idcard-job::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    height: 2px;
+    bottom: -3px;
+    background-color: #0079f6;
+    left: 0;
+}
+
+.idcard-data {
+    list-style: none;
+    width: max-content;
+}
+
+.idcard-data li {
+    line-height: 33px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.idcard-data li:first-child {
+    padding-top: 10px;
+}
+
+.idcard-data li i {
+    color: #0079f6;
+    padding-right: 5px;
+}
+
+
+
+
+
+@media(max-width: 1280px) {
+
+    .amz-title::after {
+
+        left: 36%;
+
+    }
+    .manual-title::after {
+        width: 300px;
+    }  
+
+}
+
+
+
+@media(max-width: 1024px) {
+
+    .amz-title::after {
+
+        left: 36%;
+
+    }
+    .manual-title::after {
+        left: 35%;
+    }    
+
+    .amz-title h2 {
+
+        font-size: 30px;
+
+    }
+
+    .amz-title::after {
+
+        left: 31%;
+
+    }
+
+}
+
+
+@media(max-width: 991px) {
+    .manual-title::after {
+        bottom: -8%;
+        width: 290px;
+    } 
+}
+ 
+
+@media(max-width: 768px) {
+
+    .amz-title::after {
+
+        left: 25%;
+
+    }
+    .manual-title::after {
+        left: 31%;
+        width: 280px;
+        bottom: -6%;
+    } 
+
+
+}
+
+
+
+@media(max-width: 544px) {
+
+    .amz-title h2 {
+
+        font-size: 22px;
+
+    }
+
+    .amz-title::after {
+
+        width: 220px;
+
+        left: 27%;
+
+        bottom: -10%;
+
+    }
+
+    .amz-name {
+
+        display: flex;
+
+        justify-content: center;
+
+        padding: 20px 0 5px 0;
+
+    }
+
+    .amz-name h3 {
+
+        font-size: 20px;
+
+    }
+
+    .amz-text_name h3 {
+
+        font-size: 20px;
+
+    }
+
+}
+
+
+
+@media(max-width: 468px) {
+
+    .amz-title h2 {
+
+        font-size: 21px;
+
+    }
+
+    .amz-title::after {
+
+        left: 24%;
+
+    }
+
+    .manual {
+        margin: 50px 0 0 0;
+    }
+
+    .manual-title h2 {
+        font-size: 30px;
+    }
+
+    .amz-name h3 {
+
+        font-size: 18px;
+
+    }
+
+    .idcard-name h3 {
+        font-size: 20px;
+    }
+
+    .manual-title::after {
+        left: 19%;
+    }
+    
+    .amz-text_name h3 {
+
+        font-size: 18px;
+
+    }
+
+    .amz-img img {
+
+        width: 100%;
+
+    }
+
+}
+
+
+
+@media (max-width: 414px) {
+
+    .amz-title h2 {
+
+        font-size: 19px;
+
+    }
+
+    .manual-title::after {
+        left: 18%;
+        width: 215px;
+        bottom: -6%;
+    }
+
+    .manual-title::after {
+        left: 21%;
+        width: 230px;
+        bottom: -8%;
+    }
+
+    .amz-title::after {
+
+        left: 22%;
+
+    }
+
+    .amz-text_name {
+
+        text-align: center;
+
+    }
+
+}
+
+
+
+
+
+@media(max-width: 360px) {
+
+    .amz-title h2 {
+
+        font-size: 17px;
+
+    }
+
+    .amz-name h3 {
+
+        font-size: 17px;
+
+    }
+
+    .amz-title::after {
+
+        width: 170px;
+
+        left: 25%;
+
+    }
+
+    .amz-text_name {
+
+        text-align: center;
+
+    }
+
+    .amz-text_name {
+
+        margin-top: 40px;
+
+    }
+
+    .amz-text_disc span {
+
+        line-height: 30px;
+
+        font-size: 16px;
+
+    }
+
+}
+
+
+
+@media (max-width: 320px) {
+
+    .amz-title h2 {
+
+        font-size: 19px;
+
+    }
+
+    .manual-title::after {
+        left: 13%;
+    }
+
+    .amz-title::after {
+
+        width: 150px;
+
+        left: 24%;
+
+        bottom: -5%;
+
+    }
+
+}

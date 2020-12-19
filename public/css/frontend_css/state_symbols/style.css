@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1440px;
+}
+
+body {
+    font-family: "Segoe UI Italic";
+}
+
+/* 
+
+SYMBOLS
+
+*/
+
+
+section.symbols {
+    margin-top: 50px;
+    position: relative;
+}
+
+section.symbols::after {
+    content: "";
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 42%;
+    height: 18%;
+    z-index: -1;
+    right: 0%;
+    bottom: 0%;
+    opacity: 0.4;
+}
+
+.symbols-title {
+    text-align: center;
+    border-bottom: 1px solid #707070;
+}
+
+.symbols-title h2 {
+    position: relative;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";;
+}
+
+.symbols-title h2::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    height: 4px;
+    background-color: #2696f8;
+    border-radius: 4px;
+    bottom: -23%;
+    left: 39%;
+}
+
+.emblem {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.emblem-name {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.emblem-name::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    background-color: #2696f8;
+    left: 20%;
+    bottom: -40%;
+    z-index: 1;
+}
+
+.emblem-name h4 {
+    color: #2696f8;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.emblem-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.emblem-disc span {
+    display: flex;
+    color: #707070;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+.flag {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flag-name {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.flag-name::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    background-color: #2696f8;
+    left: 20%;
+    bottom: -40%;
+    z-index: 1;
+}
+
+.flag-name h4 {
+    color: #2696f8;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.flag-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.flag-disc span {
+    display: flex;
+    color: #707070;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+.gymn {
+    padding: 50px 0;
+}
+
+.gymn-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.gymn-name {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.gymn-name::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    background-color: #2696f8;
+    left: 20%;
+    bottom: -40%;
+    z-index: 1;
+}
+
+.gymn-name h4 {
+    color: #2696f8;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.gymn-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.gymn-date {
+    margin: 40px 0;
+}
+
+.gymn-date span {
+    display: flex;
+    text-align: center;
+    color: #707070;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.gymn-authors {
+    padding: 20px 0;
+}
+
+.gymn-authors p {
+    color: #707070;
+    font-weight: 500;
+}
+
+.gymn-authors span {
+    color: #707070;
+    font-weight: 600;
+}
+
+.gymn-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gymn-text div {
+    margin: 10px 0;
+}
+
+.gymn-text_first {
+    padding-right: 150px;
+}
+
+.gymn-text_second {
+    padding-left: 150px;
+    margin: 10px 0;
+}
+
+.gymn-text_third {
+    padding-right: 150px;
+}
+
+.gymn-text_fourth {
+    padding-left: 150px;
+    margin: 10px 0;
+}
+
+.gymn-text span {
+    color: #707070;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+#end {
+    margin-top: 50px;
+}
+
+
+/* 
+
+ADAPTIVKA
+
+*/
+
+
+
+@media(max-width: 1024px) {
+    .symbols-title h2::after {
+        left: 36%;
+    }
+}
+
+@media(max-width: 991px) {
+    .symbols-title h2::after {
+        left: 34%;
+    }
+}
+
+@media (max-width: 768px) { 
+    .symbols-title h2::after  {
+        left: 31%;
+    }
+}
+
+@media (max-width: 720px) {
+    .symbols-title h2::after {
+        left: 29%;
+    }  
+}
+
+@media (max-width: 589px) {
+    .symbols-title h2::after {
+        left: 28%;
+        width: 250px;
+        bottom: -13%;
+    }
+}
+
+@media(max-width: 480px) {
+    .symbols-title h2 {
+        font-size: 32px;
+    }
+    .symbols-title h2::after {
+        left: 28%;
+        width: 200px;
+    }
+
+    .emblem-name h4 {
+        font-size: 20px;
+    }
+    .emblem-name::after {
+        left: 25%;
+        width: 150px;
+    }
+    .flag-name h4 {
+        font-size: 20px;
+    }
+    .flag-name::after {
+        left: 25%;
+        width: 150px;
+    }
+    .gymn-name h4 {
+        font-size: 20px;
+    }
+    .gymn-name::after {
+        left: 25%;
+        width: 150px;
+    }
+    .gymn-text_first {
+        padding-right: 0;
+    }
+    .gymn-text_second {
+        padding-left: 0;
+    }
+    .gymn-text_third {
+        padding-right: 0;
+    }
+    .gymn-text_fourth {
+        padding-left: 0;
+    }
+    .gymn-img_footer {
+        width: 300px;
+    }
+    .gymn-img_footer img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media(max-width: 360px) {
+    .gymn-text span {
+        font-size: 17px;
+    }
+    .flag-text span {
+        font-size: 17px;
+    }
+    .emblem-text span {
+        font-size: 17px;
+    }
+    .gymn-date span {
+        font-size: 16px;
+    }
+    .symbols-title h2 {
+        font-size: 28px;
+    }
+    .symbols-title h2::after {
+        left: 23%;
+        width: 175px;
+    }
+    .emblem-name::after {
+        left: 26%;
+        width: 130px;
+    }
+    .flag-name::after {
+        left: 26%;
+        width: 130px;
+    }
+    .gymn-name::after {
+        left: 26%;
+        width: 130px;
+    }
+    .gymn-img_footer {
+        width: 250px;
+    }
+}
+
+@media(max-width :320px){
+    .symbols-title h2 {
+        font-size: 24px;
+    }
+    .symbols-title h2::after {
+        left: 24%;
+        width: 150px;
+        bottom: -18%;
+    }
+    .emblem-name h4 {
+        font-size: 18px;    
+    }
+    .emblem-name::after {
+        left: 28%;
+        width: 120px;
+    }
+    .flag-name h4 {
+        font-size: 18px;    
+    }
+    .flag-name::after {
+        left: 28%;
+        width: 120px;
+    }
+    .gymn-name h4 {
+        font-size: 18px;    
+    }
+    .gymn-name::after {
+        left: 28%;
+        width: 120px;
+    }
+    .gymn-text span {
+        font-size: 16px;
+    }
+    .flag-disc span {
+        font-size: 16px;
+        text-align: center;
+    }
+    .emblem-disc span {
+        font-size: 16px;
+        text-align: center;
+    }
+}
